@@ -15,10 +15,12 @@ Aspose Doc Importer Plugin for WordPress allows developers to get/read contents 
 
 == Installation ==
 
-1. Download the plugin and extract it.
-2. Upload the directory '/aspose-doc-importer/' to the '/wp-content/plugins/' directory.
-3. Activate the plugin through the 'Plugins' menu in WordPress.
-4. Click on 'Aspose Doc Importer' link under Settings menu to access the admin section.
+1. Creating an account at http://cloud.aspose.com is a prerequisite for adding Aspose Key & ID in the settings. Please check the link to see how you can get app keys http://www.aspose.com/docs/display/rest/Creating+a+New+App+and+Getting+App+Key
+2. Download the plugin and extract it.
+3. Upload the directory '/aspose-doc-importer/' to the '/wp-content/plugins/' directory.
+4. Activate the plugin through the 'Plugins' menu in WordPress.
+5. Click on 'Aspose Doc Importer' link under Settings menu to access the admin section.
+
 
 == Features ==
 
