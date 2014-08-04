@@ -155,6 +155,11 @@ function add_aspose_doc_importer_button($context){
 add_action( 'admin_footer',  'aspose_doc_add_inline_popup_content' );
 function aspose_doc_add_inline_popup_content() {
     ?>
+	<style type="text/css">
+        .ui-widget-overlay {
+            z-index:100 !important;
+        }
+    </style>
     <div id="aspose_doc_popup_container" title="Aspose Doc Importer">
         <p>
         <?php
