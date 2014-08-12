@@ -48,6 +48,7 @@ if($ext == 'doc' || $ext == 'docx') {
     if(!isset($_REQUEST['aspose'])) {
 
         $folder = new Folder();
+		$uploadpath = str_replace("\\","/",$uploadpath);
         $uploadFile = $uploadpath .  $filename; // 'F:\\xampp\htdocs\\wordpress\\uploads\\License.pdf';
         $folder->uploadFile($uploadFile, '');
     }
