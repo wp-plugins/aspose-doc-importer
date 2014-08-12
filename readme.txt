@@ -21,6 +21,8 @@ Aspose Doc Importer Plugin for WordPress allows developers to get/read contents 
 4. Activate the plugin through the 'Plugins' menu in WordPress.
 5. Click on 'Aspose Doc Importer' link under Settings menu to access the admin section.
 
+== Plugin Requirements ==
+- This Plugin works only with PHP version >=5.3
 
 == Features ==
 
