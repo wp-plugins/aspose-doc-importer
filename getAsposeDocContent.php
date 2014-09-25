@@ -9,6 +9,7 @@ use Aspose\Cloud\Common\AsposeApp;
 use Aspose\Cloud\Common\Product;
 use Aspose\Cloud\Storage\Folder;
 use Aspose\Cloud\Words\Extractor;
+use Aspose\Cloud\Words\Converter as WordsConverter;
 
 
 function my_autoloader($class) {
@@ -53,15 +54,13 @@ if($ext == 'doc' || $ext == 'docx') {
         $folder->uploadFile($uploadFile, '');
     }
 
-    $filename = trim($filename);
-    $func = new Extractor($filename);
-
-    $output_arr = $func->getText();
-    $content = '';
-    foreach($output_arr as $output){
-        $content .= '<p>' . $output->Text . '</p>';
-    }
-    echo $content;
+    $converter = new WordsConverter($filename);
+	$converter->saveFormat = 'html';
+	$content = $converter->convert();
+	$content = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
+	//$content = strip_tags($content,'<span>');
+	echo $content;
+	
 } else {
     echo "Wrong File was selected!";
 }
