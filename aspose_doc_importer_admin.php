@@ -26,6 +26,7 @@ function AsposeDocImporterEnqueueScripts() {
         'appSID'            => get_option('aspose_doc_importer_app_sid'),
         'appKey'            => get_option('aspose_doc_importer_app_key'),
         'uploadpath'        => $upload_path['path'],
+        'uploadURI'         => $upload_path['url'],
         'insert_doc_url'    => plugins_url( 'getAsposeDocContent.php', __FILE__ ),
         'aspose_files_url'    => plugins_url( 'getAsposeFiles.php', __FILE__ ),
 
