@@ -114,7 +114,7 @@ if($ext == 'doc' || $ext == 'docx') {
 
 
         $find_string = $find_string . $img_src;
-        $replace_string = $uploadURI . $file_name;
+        $replace_string = $uploadURI . '/'. $file_name;
         $content = str_replace($find_string, $replace_string, $content);
 
         file_put_contents($file, $data);

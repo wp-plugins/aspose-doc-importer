@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
             type : "post",
             dataType : "html",
             url : AsposeDocParams['insert_doc_url'],
-            data : {appSID: AsposeDocParams['appSID'], appKey : AsposeDocParams['appKey'], filename : filename, uploadpath: AsposeDocParams['uploadpath']},
+            data : {appSID: AsposeDocParams['appSID'], appKey : AsposeDocParams['appKey'], filename : filename, uploadpath: AsposeDocParams['uploadpath'] , uploadURI: AsposeDocParams['uploadURI']},
             success: function(response) {
                 $body.removeClass("loading");
 
