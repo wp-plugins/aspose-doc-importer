@@ -3,7 +3,7 @@ Contributors: fahadadeelgmailcom
 Contributor's website: http://cloud.aspose.com/
 Tags: wp doc import,wordpress insert doc text to editor,wp doc reader,wordpress doc importer page,wpasposedocimport,wp aspose doc import,aspos doc importer,doc reader aspose cloud,aspose cloud storage doc reader
 Requires at least: 2.8
-Tested up to: 3.8.1
+Tested up to: 4.1.1
 Stable tag: 2.0
 License: GPLv2 or later
 
@@ -50,4 +50,4 @@ No, this plugin is only for doc files. For the pdf file reader, you have to use 
 * This is the first version
 
 = 2.0 =
-* Image Support is included.
+* Image importing feature is included.
